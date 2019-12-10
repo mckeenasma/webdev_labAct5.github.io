@@ -1,0 +1,111 @@
+body {
+    background-image: url("BG.jfif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right; 
+    background-position-x: 200px;
+    background-position-y: -200px;
+    background-size: 1400px 1000px;
+    font-family: Helvetica;
+    font-size: 14px;
+    margin: 0;
+  }
+
+.vl {
+    border-left: 1.5px solid gray;
+    height: 25px;
+    margin-left: 20px;
+  }
+.sidebar {
+    width: 309px;
+    height: 670px;
+    background-color: white;
+    box-shadow: 3px 0px 15px gray;
+    position: absolute;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar-list a{
+    padding-left: -15px;
+    text-decoration: none;
+    color: black;
+}
+
+.profile {
+    float: left;
+}
+
+.form-row {
+    padding: 1.5em;
+}
+.form-row > label {
+    padding: .5em 1em .5em 0;
+}
+.form-row > .vl {
+    padding: .5em;
+    float: left;
+}
+content {
+    /* float: right; */
+    margin-left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.oblong {
+    background-color: #f7178b;
+    width: 170px;
+    height: 54px;
+    border-radius: 30px;
+    margin-left: 20%;
+    
+}
+
+.rectangle {
+    background-color: #e6ecf0;
+    margin-top: 20px;
+    width: 300px;
+    height: 520px;
+    box-shadow: 3px 0px 15px gray;
+}
+
+content .card {
+    padding-top: 50px;
+    opacity: 0.5;
+}
+
+content .card:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+    color: white;
+}
+
+.rectangle img, .rectangle p {
+    padding: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-row > input {
+     flex: 3; 
+}
+}
+@media screen and (min-width: 992px) {
+    .form-row > input {
+     flex: 4;  
+}
+}
+@media screen and (min-width: 1200px) {
+    .form-row > input {
+     flex: 5;  
+}
+}
